@@ -160,34 +160,34 @@ Led::Led(int red, int green, int blue)
 void Led::red()
 {
 	//Ponemos todos los pines a LOW excepto el rojo (pinRed)
-	digitalWrite(pinRed, HIGH);
-	digitalWrite(pinBlue, LOW);
-	digitalWrite(pinGreen, LOW);
+	digitalWrite(pinRed, LOW);
+	digitalWrite(pinBlue, HIGH);
+	digitalWrite(pinGreen, HIGH);
 }
 
 //Method blue---> Turns on the led with blue color
 void Led::blue()
 {
 	//Ponemos todos los pines a LOW excepto el azul (pinBlue)
-	digitalWrite(pinRed, LOW);
-	digitalWrite(pinBlue, HIGH);
-	digitalWrite(pinGreen, LOW);
+	digitalWrite(pinRed, HIGH);
+	digitalWrite(pinBlue, LOW);
+	digitalWrite(pinGreen, HIGH);
 }
 
 //Method green---> Turns on the led with green color
 void Led::green()
 {
 	//Ponemos todos los pines a LOW excepto el verde (pinGreen)
-	digitalWrite(pinRed, LOW);
-	digitalWrite(pinBlue, LOW);
-	digitalWrite(pinGreen, HIGH);
+	digitalWrite(pinRed, HIGH);
+	digitalWrite(pinBlue, HIGH);
+	digitalWrite(pinGreen, LOW);
 }
 
 //Method red---> Turns off the led
 void Led::off()
 {
 	//Ponemos todos los pines a LOW
-	digitalWrite(pinRed, LOW);
-	digitalWrite(pinBlue, LOW);
-	digitalWrite(pinGreen, LOW);
+	digitalWrite(pinRed, HIGH);
+	digitalWrite(pinBlue, HIGH);
+	digitalWrite(pinGreen, HIGH);
 }
