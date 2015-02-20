@@ -12,16 +12,16 @@
 SumoBot::SumoBot()
 {
 	//Asignamos los pines como indica el manual
-	pinDist=A3;
+	pinDist=A5;
 	pinLight_R=A0;
 	pinLight_L=A1;
-	pinMotor_R1=5;
-	pinMotor_R2=6;
-	pinMotor_L1=6;
-	pinMotor_L2=7;
+	pinMotor_R1=7;
+	pinMotor_R2=8;
+	pinMotor_L1=5;
+	pinMotor_L2=6;
 	pinRed=2;
-	pinGreen=3;
-	pinBlue=4;
+	pinGreen=4;
+	pinBlue=3;
 	
 	//Llamamos a losconstructores de los componentes para inicializarlos
 
